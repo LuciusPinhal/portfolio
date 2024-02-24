@@ -1,26 +1,59 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <header>
+      <NavbarMenu :logo="logo_src" :alt="app_name"/> 
+    </header>
+    <main>
+      <router-view />
+    </main>
+  </div> 
+
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavbarMenu from "./components/NavbarMenu.vue";
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  document.cookie = 'locale=PTBR'
+})
 
 export default {
-  name: 'App',
+
   components: {
-    HelloWorld
+    NavbarMenu,
+  },
+  data() {
+    return {
+      logo_src: require('./img/logo.png'),
+      app_name: "Make Your Burger"
+    }
   }
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  margin-top: 55px !important;
+  margin: 24px;
+  min-height: 250px;
+}
+
+h1 {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+
 }
 </style>
