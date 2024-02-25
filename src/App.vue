@@ -18,7 +18,6 @@ import { onMounted } from 'vue';
 onMounted(() => {
   document.cookie = 'locale=PTBR'
 })
-
 export default {
 
   components: {
@@ -44,7 +43,7 @@ export default {
 }
 
 .main-container {
-  margin-top: 55px !important;
+  margin-top: 32px !important;
   margin: 24px;
   min-height: 250px;
 }
