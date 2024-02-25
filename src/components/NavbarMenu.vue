@@ -1,4 +1,5 @@
 <template>
+    <!-- falta trabalhar resposividade -->
     <div id="nav" :class="{ active: activeSection === 'about' }">
         <div class="formNav">
            <nav class="tabsNav">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section id="home" style="--clr:#ff4d4d;">{{ $t('Home') }}</section>
+    <section id="home" style="--clr:#ff4d4d;"><P_home /></section>
     <section id="about" style="--clr:#c56cf0;">{{ $t('About') }}</section>
     <section id="services" style="--clr:#ffeaa7;">{{ $t('Services') }}</section>
     <section id="portfolio" style="--clr:#17c0eb;">{{ $t('Portfolio') }}</section>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-
+import P_home from './src/P_Home.vue'
 
 
 
@@ -20,7 +20,7 @@ export default {
     };
   },
   components: {
-
+    P_home
   },
   computed: {
 

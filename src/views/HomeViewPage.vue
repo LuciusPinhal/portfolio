@@ -2,10 +2,7 @@
   <div>
     <div class="main-container">
       <div class="header-static">
-        <div class="form-header">
-          <h1>Tabela de Usuários</h1>
-        </div>
-        <TableUser />
+        <Pages />
       </div>
     </div>
   </div>
@@ -14,7 +11,7 @@
 
 
 <script>
-import TableUser from '../components/template/TableUser.vue'
+import Pages from '../components/template/PortifolioPages.vue'
 export default {
   name: 'HomeViewPage',
   data() {
@@ -23,7 +20,7 @@ export default {
     }
    },
   components: {
-     TableUser
+     Pages
   },
   methods: {
 

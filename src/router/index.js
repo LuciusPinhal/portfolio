@@ -7,12 +7,7 @@ const routes = [
     name: 'HomeViewPage',
     component: HomeViewPage
   },
-  {
-    path: '/ListUserTable',
-    name: 'ListUserTable',
-
-    component: () => import(/* webpackChunkName: "ListUserTable" */ '../views/ListUserTable.vue')
-  }
+  
 ]
 
 const router = createRouter({
