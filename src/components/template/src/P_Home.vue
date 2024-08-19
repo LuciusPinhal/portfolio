@@ -2,14 +2,16 @@
 	<div class="parent">
 	<div class="div1"><TextAnimetion/></div>
 	<div class="div2"><avatarVue/></div>
-	<div class="div3"> guys</div>
+	<div class="div3"> <ScrollingAnimation/></div>
 	</div>
 </template>
 
 <script>
 
 import avatarVue from '../AvatarImg.vue';
+import ScrollingAnimation from '../ScrollingAnimation.vue';
 import TextAnimetion from '../TextAnimetion.vue';
+
 
 
 export default {
@@ -20,7 +22,8 @@ export default {
 	},
 	components: {
 		avatarVue,
-		TextAnimetion
+		TextAnimetion,
+		ScrollingAnimation
 	},
 	computed: {
 
@@ -53,5 +56,5 @@ export default {
 
 .div1 { grid-area: 1 / 1 / 4 / 3; }
 .div2 { grid-area: 1 / 3 / 4 / 5; }
-.div3 { grid-area: 4 / 1 / 5 / 5; background: rgb(105, 206, 11);}
+.div3 { grid-area: 4 / 1 / 5 / 5; }
 </style>
