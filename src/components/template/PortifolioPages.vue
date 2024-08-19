@@ -1,6 +1,7 @@
 <template>
   <div>
-    <section id="home" style="--clr:#ff4d4d;"><P_home /></section>
+    <!-- <section id="home" style="--clr:#ff4d4d;"><P_home /></section> -->
+    <section id="home"><P_home /></section>
     <section id="about" style="--clr:#c56cf0;">{{ $t('About') }}</section>
     <section id="services" style="--clr:#ffeaa7;">{{ $t('Services') }}</section>
     <section id="portfolio" style="--clr:#17c0eb;">{{ $t('Portfolio') }}</section>
@@ -47,10 +48,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8em;
+  /* font-size: 8em;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.25);
-  text-transform: uppercase;
+  text-transform: uppercase; */
   background: var(--clr);
 }
 </style>
