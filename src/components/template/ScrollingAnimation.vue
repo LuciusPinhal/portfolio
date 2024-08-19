@@ -81,14 +81,15 @@ export default {
 
 <style scoped>
 p{
-    color: #999999;
-    font-size: 20px;
+    color: #000000;
+    font-size: 24px;
     padding-bottom: 10px; 
  
 }
 
 .line {
     width: 100%;
+    color: #000000;
     margin-bottom: 10px; 
 }
 .container{

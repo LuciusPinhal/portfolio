@@ -10,7 +10,7 @@
                             <div class="imgBx">
                                 <img src="../../img/me.jpeg">
                             </div>
-                            <div class="textBx">
+                            <!-- <div class="textBx">
                                 <h2>Lucius Pinhal Ferreira<br><b>{{ $t('desenvolvedor') }}</b></h2>
                                 <ul class="sci">
                                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -18,7 +18,7 @@
                                     <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -168,8 +168,8 @@ export default {
 }
 .contentBx .card .imgBx{
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     overflow: hidden;
 }

@@ -48,15 +48,16 @@ export default {
   
 }
 p{
-    color: #999999;
+    color: #000000;
     font-size: 20px;
 }
 h2{
+    color: #A43913;
     font-size: 40px; 
 }
 .container p,
 .container h2 {
-    margin: 14px;
+    margin-bottom: 14px;
 }
 
 </style>
