@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-        <p>Hello!</p>
-        <h2>I'm Lucius</h2>
-        <p>Desenvolvedor Full-Stack & Love To Play Video Games</p>
+        <p>{{ $t('Hello') }}</p>
+        <h2>{{ $t('Im') }} Lucius</h2>
+        <p>{{ $t('Introducao') }}</p>
     </div>
 </template>
 

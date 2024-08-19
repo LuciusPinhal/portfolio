@@ -2,7 +2,7 @@
 	<div class="parent">
 	<div class="div1"><TextAnimetion/></div>
 	<div class="div2"><avatarVue/></div>
-	<div class="div3"> <ScrollingAnimation/></div>
+	<div class="div3"><ScrollingAnimation/></div>
 	</div>
 </template>
 

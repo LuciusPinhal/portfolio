@@ -11,7 +11,7 @@
                                 <img src="../../img/me.jpeg">
                             </div>
                             <div class="textBx">
-                                <h2>Lucius Pinhal Ferreira<br><b>Desenvolvedor</b></h2>
+                                <h2>Lucius Pinhal Ferreira<br><b>{{ $t('desenvolvedor') }}</b></h2>
                                 <ul class="sci">
                                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>

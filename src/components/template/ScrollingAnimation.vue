@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <p>Habilidades</p>
+        <p>{{ $t('Skills') }}</p>
         <hr class="line">
         <div class="scroll" style="--t:30s">
             <div>
