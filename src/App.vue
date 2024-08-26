@@ -12,7 +12,7 @@
 
 
 <script>
-import NavbarMenu from "./components/NavbarMenu.vue";
+import NavbarMenu from "./components/Navbar/NavbarMenu.vue";
 import { onMounted } from 'vue';
 
 onMounted(() => {

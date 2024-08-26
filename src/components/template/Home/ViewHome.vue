@@ -8,9 +8,9 @@
 
 <script>
 
-import avatarVue from '../AvatarImg.vue';
-import ScrollingAnimation from '../ScrollingAnimation.vue';
-import TextAnimetion from '../TextAnimetion.vue';
+import avatarVue from './Component/AvatarImg.vue';
+import ScrollingAnimation from './Component/ScrollingAnimation.vue';
+import TextAnimetion from './Component/TextAnimetion.vue';
 
 
 

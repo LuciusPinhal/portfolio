@@ -8,7 +8,7 @@
                     <div class="contentBx active" id="content1">
                         <div class="card">
                             <div class="imgBx">
-                                <img src="../../img/me.jpeg">
+                                <img :src="require('@/img/me.jpeg')">
                             </div>
                             <!-- <div class="textBx">
                                 <h2>Lucius Pinhal Ferreira<br><b>{{ $t('desenvolvedor') }}</b></h2>
@@ -66,13 +66,13 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
 
 }
 .square{
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,8 +168,8 @@ export default {
 }
 .contentBx .card .imgBx{
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     overflow: hidden;
 }
