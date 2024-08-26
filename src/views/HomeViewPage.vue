@@ -2,12 +2,12 @@
   <div>
     <div class="main-container">
       <div class="header-static">
-        <!-- <section id="home" style="--clr:#ff4d4d;"><P_home /></section> -->
-        <section id="home"><P_home /></section>
-        <section id="about" style="--clr:#c56cf0;">{{ $t('About') }}</section>
-        <section id="services" style="--clr:#ffeaa7;">{{ $t('Services') }}</section>
+        <section id="home"><ViewHome/></section>
+        <section id="about"><ViewAbout/></section>
         <section id="portfolio" style="--clr:#17c0eb;">{{ $t('Portfolio') }}</section>
         <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section>
+
+        <!-- <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section> -->
       </div>
     </div>
   </div>
@@ -17,19 +17,21 @@
 
 <script>
 
-
-import P_home from '../components/template/Home/ViewHome.vue'
+import ViewAbout from '../components/template/About/ViewAbout.vue'
+import ViewHome from '../components/template/Home/ViewHome.vue'
 
 export default {
   name: 'HomeViewPage',
+
   data() {
     return {
   
     }
    },
   components: {
-    
-     P_home
+    ViewHome,
+    ViewAbout
+
   },
   methods: {
 

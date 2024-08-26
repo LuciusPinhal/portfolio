@@ -2,7 +2,7 @@
     <div class="container">
         <p>{{ $t('Skills') }}</p>
         <hr class="line">
-        <div class="scroll" style="--t:30s">
+        <div class="scroll" style="--t:90s">
             <div>
                 <span>HTML</span>
                 <span>CSS</span>

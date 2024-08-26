@@ -5,7 +5,6 @@
            <nav class="tabsNav">
                 <a @click="scrollToSection('home')" :class="{ active: activeSection === 'home' }">{{ $t('Home') }}</a>
                 <a @click="scrollToSection('about')" :class="{ active: activeSection === 'about' }">{{ $t('About') }}</a>
-                <a @click="scrollToSection('services')" :class="{ active: activeSection === 'services' }">{{ $t('Services') }}</a>
                 <a @click="scrollToSection('portfolio')" :class="{ active: activeSection === 'portfolio' }">{{ $t('Portfolio') }}</a>
                 <a @click="scrollToSection('contact')" :class="{ active: activeSection === 'contact' }">{{ $t('Contact') }}</a>
             </nav>
@@ -40,7 +39,7 @@ export default {
     props: ["logo", "alt"],
     data() {
         return {
-            selectedItem: 'PTBR',
+            selectedItem: 'PTBR',// deixar dinamico
             activeSection: '',
             isDropdownVisible: false
         };

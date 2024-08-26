@@ -7,30 +7,31 @@
       <router-view />
     </main>
   </div> 
-
 </template>
-
 
 <script>
 import NavbarMenu from "./components/Navbar/NavbarMenu.vue";
-import { onMounted } from 'vue';
 
-onMounted(() => {
-  document.cookie = 'locale=PTBR'
-})
+
 export default {
-
   components: {
     NavbarMenu,
   },
   data() {
     return {
       logo_src: require('./img/logo.png'),
-      app_name: "Make Your Burger"
+      app_name: "Project"
     }
+  },
+  methods: {
+    setLocaleCookie() {
+      document.cookie = 'locale=PTBR';
+    }
+  },
+  mounted() {
+    this.setLocaleCookie();
   }
 }
-
 </script>
 
 <style>
@@ -53,6 +54,5 @@ h1 {
   font-size: 32px;
   margin-bottom: 10px;
   color: #222;
-
 }
 </style>
