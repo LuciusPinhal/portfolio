@@ -1,8 +1,8 @@
 <template>
     <div class="scrolling-wrapper">
       <div id="scrollText" class="scroll-text">
-        Not Your Average Software Engineer - Not Your Average Software Engineer -  Not Your Average Software Engineer
-        <br>Software Engineer - Not Your Average Software Engineer -  Not Your Average Software Engineer
+        Not Your Average Software Engineer - Not Your Average Software Engineer -  Not Your Average Software Engineer - Not Your Average Software Engineer - Not Your Average Software Engineer - Not Your Average Software Engineer
+        <br>Software Engineer - Not Your Average Software Engineer -  Not Your Average Software Engineer -  Not Your Average Software Engineer - Not Your Average Software Engineer - Not Your Average Software Engineer
       </div>
     </div>
   </template>
@@ -24,7 +24,7 @@
   
         // Move o texto horizontalmente com base na rolagem
         let translateXValue = -((scrollValue * 2) % textWidth);
-        textElement.style.transform = `translateX( ${translateXValue + 400 }px)`;
+        textElement.style.transform = `translateX( ${translateXValue + 200 }px)`;
       }
     }
   }
@@ -33,16 +33,17 @@
   <style scoped>
 
 .scrolling-wrapper {
-    position: relative; /* Permite que a div fique no fluxo normal da página */
-    width: 100%; /* A largura do contêiner */
-    overflow: hidden; /* Oculta o conteúdo que excede a largura do contêiner */
-    white-space: nowrap; /* Impede quebra de linha */
-    margin: 20px 0; /* Adiciona espaço entre os elementos acima e abaixo */
+    position: relative; 
+    width: 100%; 
+    overflow: hidden; 
+    white-space: nowrap; 
+
+    height: 158px;
 }
 
 .scroll-text {
     display: inline-block;
-    font-size: 64px; /* Tamanho do texto baseado na largura da viewport */
+    font-size: 45px; /* Tamanho do texto baseado na largura da viewport */
     color: #F9E3DE;
     white-space: nowrap;
     font-weight: bold;
