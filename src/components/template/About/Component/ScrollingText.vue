@@ -33,19 +33,20 @@
   <style scoped>
 
 .scrolling-wrapper {
-    position: relative; 
-    width: 100%; 
-    overflow: hidden; 
-    white-space: nowrap; 
-
-    height: 158px;
+  position: relative;
+  width: 100%;
+  top: -5vh;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 158px;
+  margin-bottom: 1vh;
 }
 
 .scroll-text {
-    display: inline-block;
-    font-size: 45px; /* Tamanho do texto baseado na largura da viewport */
-    color: #F9E3DE;
-    white-space: nowrap;
-    font-weight: bold;
+  display: inline-block;
+  font-size: 45px; /* Tamanho do texto baseado na largura da viewport */
+  color: #F9E3DE;
+  white-space: nowrap;
+  font-weight: bold;
 }
   </style>

@@ -4,7 +4,7 @@
       <div class="header-static">
         <section id="home"><ViewHome/></section>
         <section id="about"><ViewAbout/></section>
-        <section id="portfolio" style="--clr:#17c0eb;">{{ $t('Portfolio') }}</section>
+        <section id="portfolio"><ViewProject/></section>
         <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section>
 
         <!-- <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section> -->
@@ -19,6 +19,7 @@
 
 import ViewAbout from '../components/template/About/ViewAbout.vue'
 import ViewHome from '../components/template/Home/ViewHome.vue'
+import ViewProject from '@/components/template/Projects/ViewProject.vue'
 
 export default {
   name: 'HomeViewPage',
@@ -30,7 +31,8 @@ export default {
    },
   components: {
     ViewHome,
-    ViewAbout
+    ViewAbout,
+    ViewProject
 
   },
   methods: {
@@ -44,9 +46,9 @@ export default {
 section {
   width: 100%;
   height: 100vh;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   /* font-size: 8em;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.25);
