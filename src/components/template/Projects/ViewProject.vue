@@ -60,7 +60,7 @@ export default {
 	display: flex;
     align-items: center;
     margin-top: 15vh;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 13px;
 }
