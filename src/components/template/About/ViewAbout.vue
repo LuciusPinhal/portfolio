@@ -1,44 +1,39 @@
 <template>
-	<div class="parent">
-		<ScrollingAnimation/>
-		<textas/>
-	</div>
+<div class="parent">
+    <ScrollingAnimation />
+    <textas />
+</div>
 </template>
 
 <script>
-
 import ScrollingAnimation from './Component/ScrollingText.vue';
 import textas from './Component/AboutMe.vue'
 export default {
-	data() {
-		return {
+    data() {
+        return {
 
-		};
-	},
-	components: {
-		ScrollingAnimation,
-		textas
-	},
-	computed: {
+        };
+    },
+    components: {
+        ScrollingAnimation,
+        textas
+    },
+    computed: {
 
+    },
+    methods: {
 
-	},
-	methods: {
+    },
+    mounted() {
 
+    },
+    created() {
 
-	},
-	mounted() {
-
-
-	},
-	created() {
-
-	},
+    },
 };
 </script>
 
 <style scoped>
-
 .parent {
     width: 100%;
     height: 100%;
@@ -46,6 +41,4 @@ export default {
     flex-wrap: wrap;
 
 }
-
-
 </style>

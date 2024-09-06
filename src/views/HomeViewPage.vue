@@ -1,100 +1,110 @@
 <template>
-  <div>
+<div>
     <div class="main-container">
-      <div class="header-static">
-        <section id="home"><ViewHome/></section>
-        <section id="about"><ViewAbout/></section>
-        <section id="portfolio"><ViewProject/></section>
-        <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section>
+        <div class="header-static">
+            <section id="home">
+                <ViewHome />
+            </section>
+            <section id="about">
+                <ViewAbout />
+            </section>
+            <section id="portfolio">
+                <ViewProject />
+            </section>
+            <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section>
 
-        <!-- <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section> -->
-      </div>
+            <!-- <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section> -->
+        </div>
     </div>
-  </div>
+</div>
 </template>
 
-
-
 <script>
-
 import ViewAbout from '../components/template/About/ViewAbout.vue'
 import ViewHome from '../components/template/Home/ViewHome.vue'
 import ViewProject from '@/components/template/Projects/ViewProject.vue'
 
 export default {
-  name: 'HomeViewPage',
+    name: 'HomeViewPage',
 
-  data() {
-    return {
-  
+    data() {
+        return {
+
+        }
+    },
+    components: {
+        ViewHome,
+        ViewAbout,
+        ViewProject
+
+    },
+    methods: {
+
     }
-   },
-  components: {
-    ViewHome,
-    ViewAbout,
-    ViewProject
-
-  },
-  methods: {
-
-  }
 }
 </script>
 
 <style scoped>
-
 section {
-  width: 100%;
-  height: 100vh;
-  /* display: flex;
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
   justify-content: center;
   align-items: center; */
-  /* font-size: 8em;
+    /* font-size: 8em;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.25);
   text-transform: uppercase; */
-  background: var(--clr);
+    background: var(--clr);
 }
 
-.form-header{
-  margin-bottom: 1.5rem;
+.form-header {
+    margin-bottom: 1.5rem;
 }
+
 .fileName p {
-  font-size: 15px;
-  margin-right: 4px;
-  font-weight: bold;
+    font-size: 15px;
+    margin-right: 4px;
+    font-weight: bold;
 }
-.fileNameText{
-  font-weight: 300 !important;
-  transition: color 0.3s ease;
+
+.fileNameText {
+    font-weight: 300 !important;
+    transition: color 0.3s ease;
 }
-.form-header > h1{
-  text-align: left;
+
+.form-header>h1 {
+    text-align: left;
 }
-.fileName{
+
+.fileName {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    color:#666666;
+    color: #666666;
 }
 
-.icon-cancel{
+.icon-cancel {
     cursor: pointer;
     width: 23px;
     height: 25px;
     color: #EE6352;
 }
-.fileName:hover .fileNameText, .fileName:hover .icon-cancel {
-  color: #EE6352;
-  text-decoration: underline;
+
+.fileName:hover .fileNameText,
+.fileName:hover .icon-cancel {
+    color: #EE6352;
+    text-decoration: underline;
 }
+
 .icon-cancel {
-  cursor: pointer;
-  width: 23px;
-  height: 25px;
-  transition: color 0.3s ease;
+    cursor: pointer;
+    width: 23px;
+    height: 25px;
+    transition: color 0.3s ease;
 }
+
 .iconContainer {
-  display: inline-block;
+    display: inline-block;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-    <div class="container">
-        <p>{{ $t('Hello') }}</p>
-        <h2>{{ $t('Im') }} Lucius</h2>
-        <p>{{ $t('Introducao') }}</p>
-    </div>
+<div class="container">
+    <p>{{ $t('Hello') }}</p>
+    <h2>{{ $t('Im') }} Lucius</h2>
+    <p>{{ $t('Introducao') }}</p>
+</div>
 </template>
 
 <script>
@@ -20,14 +20,11 @@ export default {
     },
     computed: {
 
-
     },
     methods: {
 
-
     },
     mounted() {
-
 
     },
     created() {
@@ -37,7 +34,7 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -45,19 +42,21 @@ export default {
     align-items: flex-start;
     flex-direction: column;
     padding: 6px 20px;
-  
+
 }
-p{
+
+p {
     color: #000000;
     font-size: 20px;
 }
-h2{
+
+h2 {
     color: #A43913;
-    font-size: 40px; 
+    font-size: 40px;
 }
+
 .container p,
 .container h2 {
     margin-bottom: 14px;
 }
-
 </style>

@@ -1,34 +1,34 @@
 <template>
-    <!-- falta trabalhar resposividade -->
-    <div id="nav" :class="{ active: activeSection === 'about' }">
-        <div class="formNav">
-           <nav class="tabsNav">
-                <a @click="scrollToSection('home')" :class="{ active: activeSection === 'home' }">{{ $t('Home') }}</a>
-                <a @click="scrollToSection('about')" :class="{ active: activeSection === 'about' }">{{ $t('About') }}</a>
-                <a @click="scrollToSection('portfolio')" :class="{ active: activeSection === 'portfolio' }">{{ $t('Portfolio') }}</a>
-                <a @click="scrollToSection('contact')" :class="{ active: activeSection === 'contact' }">{{ $t('Contact') }}</a>
-            </nav>
-        </div>
-        <div>
-            <nav class="tabsNav">
-                <div class="custom-dropdown" @mouseover="rotateIcon" @mouseleave="unrotateIcon">
-                    <div class="selected-item" @click="toggleDropdown">
-                        <!-- <p>🌐</p> -->
-                        <p>{{ $t('Linguagem') }}</p>
-                        <i class="fas fa-angle-down" :class="{ 'rotated': isDropdownVisible }"></i>
-                    </div>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li :class="{ 'selected': selectedItem === 'EN' }" @click="selectItem('EN')">{{ $t('ingles') }}
-                            </li>
-                            <li :class="{ 'selected': selectedItem === 'PTBR' }" @click="selectItem('PTBR')">{{ $t('brasil')
-                            }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+<!-- falta trabalhar resposividade -->
+<div id="nav" :class="{ active: activeSection === 'about' }">
+    <div class="formNav">
+        <nav class="tabsNav">
+            <a @click="scrollToSection('home')" :class="{ active: activeSection === 'home' }">{{ $t('Home') }}</a>
+            <a @click="scrollToSection('about')" :class="{ active: activeSection === 'about' }">{{ $t('About') }}</a>
+            <a @click="scrollToSection('portfolio')" :class="{ active: activeSection === 'portfolio' }">{{ $t('Portfolio') }}</a>
+            <a @click="scrollToSection('contact')" :class="{ active: activeSection === 'contact' }">{{ $t('Contact') }}</a>
+        </nav>
     </div>
+    <div>
+        <nav class="tabsNav">
+            <div class="custom-dropdown" @mouseover="rotateIcon" @mouseleave="unrotateIcon">
+                <div class="selected-item" @click="toggleDropdown">
+                    <!-- <p>🌐</p> -->
+                    <p>{{ $t('Linguagem') }}</p>
+                    <i class="fas fa-angle-down" :class="{ 'rotated': isDropdownVisible }"></i>
+                </div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li :class="{ 'selected': selectedItem === 'EN' }" @click="selectItem('EN')">{{ $t('ingles') }}
+                        </li>
+                        <li :class="{ 'selected': selectedItem === 'PTBR' }" @click="selectItem('PTBR')">{{ $t('brasil')
+                            }}</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
 </template>
 
 <script>
@@ -39,7 +39,7 @@ export default {
     props: ["logo", "alt"],
     data() {
         return {
-            selectedItem: 'PTBR',// deixar dinamico
+            selectedItem: 'PTBR', // deixar dinamico
             activeSection: '',
             isDropdownVisible: false
         };
@@ -51,8 +51,8 @@ export default {
     methods: {
         selectItem(item) {
             this.selectedItem = item;
-            this.toggleLocale(); 
-            this.isDropdownVisible = false; 
+            this.toggleLocale();
+            this.isDropdownVisible = false;
         },
         toggleLocale() {
             this.$i18n.locale = this.selectedItem;
@@ -202,7 +202,7 @@ export default {
     border-radius: 5px;
     width: 100%;
     padding: 5px 15px 15px 15px;
-    display: none; 
+    display: none;
 }
 
 .dropdown-content ul {
@@ -217,12 +217,14 @@ export default {
     border-bottom: 2px solid transparent;
     transition: background-color 0.3s;
 }
+
 .dropdown-content ul li:hover {
     color: #BC3432;
     border-color: #BC3432;
     padding: 12px 10px 18px 15px;
     transition: 0.5s;
 }
+
 .dropdown-content ul li.selected {
     color: #BC3432;
     border-color: #BC3432;
@@ -232,5 +234,4 @@ export default {
 .custom-dropdown:hover .dropdown-content {
     display: block;
 }
-
 </style>

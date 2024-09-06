@@ -1,77 +1,62 @@
 <template>
-	<div class="card">
-        <div class="imgBx"></div>
-        <div class="content">
-            <span class="price">
-                <a href="https://github.com/LuciusPinhal/PentagroChallenge?tab=readme-ov-file" class="AlingItensHeader">
-                    <i class="fa-brands fa-github fa-2x"></i> <p>Challenger Pentagro </p> 
-                </a>
-            </span>
-            <div class="Container">
-                <p>O projeto envolve o desenvolvimento de uma tela de login e gestão de usuários em Vue.js, com integração a uma API que permite o acesso dos usuários, além de salvar e recuperar dados.</p>
-                <div class="ContainerStacks">
-                    <div class="Stacks">Stacks</div>
-                    <div class="Stacks">Stacks</div>
-                    <div class="Stacks">Stacks</div>
+<div class="card">
+    <div class="imgBx" :style="{ backgroundImage: `url(${project.image})` }"></div>
+    <div class="content">
+        <span class="price">
+            <a href="https://github.com/LuciusPinhal/PentagroChallenge?tab=readme-ov-file" class="AlingItensHeader" :title="project.title">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+        </span>
+        <div class="Container">
+            <p style="font-size: 20px;"><b>{{ project.name }}</b></p>
+            <p>{{ project.description }}</p>
+
+            <div class="ContainerStacks">
+                <div v-for="stack in project.stacks" :key="stack" class="Stacks">
+                    {{ stack }}
                 </div>
             </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
 import '@fortawesome/fontawesome-free/css/all.css';
 export default {
-	data() {
-		return {
-
-		};
-	},
-	components: {
-
-	},
-	computed: {
-
-
-	},
-	methods: {
-
-
-	},
-	mounted() {
-
-
-	},
-	created() {
-
-	},
+    props: {
+        project: {
+            type: Object,
+            required: true
+        }
+    }
 };
 </script>
 
 <style scoped>
-
-.card{
+.card {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 440px;
+    height: 564px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.card .imgBx{
+
+.card .imgBx {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 260px;
     background: #f00;
     /* border-radius: 15px; */
-    background: url(http://localhost:8080/img/teste.640c4e33.png);
     background-size: cover;
     border: 1px solid black;
+    border-radius: 8px 8px 0px 8px;
     border-bottom: none;
 
 }
 
-.card .imgBx::before{
+.card .imgBx::before {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -95,29 +80,34 @@ export default {
     box-shadow: -10px 10px 0 #fff;
 } */
 
-.card .content{
+.card .content {
     position: relative;
     width: 100%;
-    height: 228px;
+    height: 230px;
     background: #ffffff;
     border: 1px solid black;
+    border-radius: 8px 0px 8px 8px;
     border-top: none;
     /* border-radius: 15px; */
     border-top-left-radius: 0;
     padding: 20px 18px;
 
 }
-.card .content .Container{
+
+.card .content .Container {
     display: flex;
-    color: #af5959;
+    color: #000;
+    height: 100%;
     align-items: flex-start;
-    gap: 20px;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.card .content .price{
+
+.card .content .price {
     position: absolute;
     top: -44px;
-    left: -1px;
+    left: -1.1px;
     height: 55px;
     width: 50%;
     background: #ffffff;
@@ -130,10 +120,10 @@ export default {
 .card .content .price::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    right: -25px;
-    width: 25px;
-    height: 25px;
+    bottom: 10px;
+    right: -34px;
+    width: 35px;
+    height: 35px;
     background: transparent;
     border-radius: 50%;
     box-shadow: -10px 10px 0 #ffffff;
@@ -149,33 +139,46 @@ export default {
     font-weight: bolder;
     text-transform: uppercase;
 }
-.AlingItensHeader{
+
+.AlingItensHeader {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 8px 20px;
     text-decoration: none;
+    color: #000;
 }
 
-p{
+p {
     font-size: 13px;
 }
-.Stacks{
+
+.Stacks {
     letter-spacing: 1px;
     text-transform: uppercase;
     background: #333;
     color: #fff !important;
-    padding: 4px 10px;
+    padding: 4px 8px;
     border-radius: 4px;
     transition: 0.5s;
+    cursor: pointer;
 }
-.ContainerStacks{
+
+.ContainerStacks {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 10px;
 
 }
 
+.Stacks:hover {
+    background: #BC3432;
+}
+
+.AlingItensHeader:hover {
+    color: #BC3432;
+
+}
 </style>
