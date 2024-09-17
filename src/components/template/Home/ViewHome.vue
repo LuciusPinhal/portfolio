@@ -12,6 +12,8 @@
 </div>
 </template>
 
+<!-- fazer uma verificação, caso for mobile usar outro componente do div1 e 2 -->
+
 <script>
 import avatarVue from './Component/AvatarImg.vue';
 import ScrollingAnimation from './Component/ScrollingAnimation.vue';

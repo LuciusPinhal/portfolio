@@ -78,6 +78,15 @@ export default {
                     stacks: ['JavaScript', 'Node.js', 'MongoDB'],
                     image: require('@/img/teste.png'),
                     Type: 'project'
+                },
+                {
+                    name: this.$t('cart'),
+                    description: 'Descrição do segundo projeto...',
+                    link: 'https://github.com/OutroProjeto',
+                    title: 'Link para o segundo projeto',
+                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
+                    image: require('@/img/teste.png'),
+                    Type: 'project'
                 }
                 
             ];
@@ -97,7 +106,7 @@ export default {
     margin-top: 15vh;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 50px;
 }
 
 .parent {

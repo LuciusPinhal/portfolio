@@ -41,7 +41,7 @@ export default {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 6px 20px;
+    padding: 6px 0px;
 
 }
 

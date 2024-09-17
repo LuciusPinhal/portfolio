@@ -43,25 +43,5 @@ export default {
     font-family: 'Poppins', sans-serif;
 }
 
-.main-container {
-    margin-top: 32px !important;
-    margin: 35vh;
-    min-height: 250px;
-    overflow: hidden !important;
-}
 
-h1 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #222;
-}
-
-@media screen and (max-width: 2105px) {
-
-    .main-container {
-        margin: 10vh;
-
-    }
-}
 </style>

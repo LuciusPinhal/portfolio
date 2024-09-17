@@ -7,7 +7,6 @@
 </div>
 </template>
 
-  
 <script>
 export default {
     name: 'HorizontalScroll',
@@ -31,16 +30,15 @@ export default {
 }
 </script>
 
-  
 <style scoped>
 .scrolling-wrapper {
     position: relative;
     width: 100%;
-    top: -5vh;
     overflow: hidden;
+    top: -4vh;
     white-space: nowrap;
     height: 158px;
-    margin-bottom: 1vh;
+    margin-bottom: 6vh;
 }
 
 .scroll-text {
@@ -50,5 +48,17 @@ export default {
     color: #F9E3DE;
     white-space: nowrap;
     font-weight: bold;
+}
+
+@media screen and (max-heigth: 900px) {
+
+    .scrolling-wrapper {
+        top: 0;
+        margin-bottom: 1vh;
+
+    }
+}
+.main-container{
+    margin: 0 !important;
 }
 </style>

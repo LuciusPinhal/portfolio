@@ -11,18 +11,20 @@
             <section id="portfolio">
                 <ViewProject />
             </section>
-            <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section>
-
-            <!-- <section id="contact" style="--clr:#fd79a8;">{{ $t('Contact') }}</section> -->
+            <section id="contact">
+            </section>
         </div>
     </div>
 </div>
+
+<ViewFooter />
 </template>
 
 <script>
-import ViewAbout from '../components/template/About/ViewAbout.vue'
-import ViewHome from '../components/template/Home/ViewHome.vue'
+import ViewAbout from '@/components/template/About/ViewAbout.vue'
+import ViewHome from '@/components/template/Home/ViewHome.vue'
 import ViewProject from '@/components/template/Projects/ViewProject.vue'
+import ViewFooter from '@/components/template/PageBaseBoard/ViewFooter.vue'
 
 export default {
     name: 'HomeViewPage',
@@ -35,7 +37,8 @@ export default {
     components: {
         ViewHome,
         ViewAbout,
-        ViewProject
+        ViewProject,
+        ViewFooter
 
     },
     methods: {
@@ -45,16 +48,31 @@ export default {
 </script>
 
 <style scoped>
+.main-container {
+    margin-top: 32px !important;
+    margin: 35vh 35vh 0 35vh;
+    min-height: 250px;
+    overflow: hidden !important;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+@media screen and (max-width: 2105px) {
+
+    .main-container {
+        margin: 10vh 10vh 0 10vh;
+
+    }
+}
+
 section {
     width: 100%;
     height: 100vh;
-    /* display: flex;
-  justify-content: center;
-  align-items: center; */
-    /* font-size: 8em;
-  font-weight: 800;
-  color: rgba(0, 0, 0, 0.25);
-  text-transform: uppercase; */
     background: var(--clr);
 }
 
@@ -106,5 +124,12 @@ section {
 
 .iconContainer {
     display: inline-block;
+}
+
+#contact {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 !important;
+    height: 650px;
 }
 </style>

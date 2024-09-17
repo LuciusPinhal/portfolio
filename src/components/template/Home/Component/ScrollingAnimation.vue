@@ -95,7 +95,7 @@ p {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    padding: 12px 20px;
+    padding: 12px 0px;
 
 }
 

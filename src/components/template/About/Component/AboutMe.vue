@@ -129,7 +129,7 @@ export default {
 }
 
 .box p {
-    font-size: 2.8vh;
+    font-size: 16px;
     border-left: 4px solid #c72626;
     padding-left: 15px;
 }
@@ -137,15 +137,17 @@ export default {
 .imgBx {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgBx img {
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 360px;
     object-fit: cover;
-    /* Garante que a imagem se ajuste ao tamanho do pai */
     object-fit: contain;
-    /* n corta a img*/
     display: block;
 }
 

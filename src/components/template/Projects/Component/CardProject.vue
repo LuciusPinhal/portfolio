@@ -37,7 +37,7 @@ export default {
 .card {
     position: relative;
     width: 440px;
-    height: 564px;
+    height: 488px;
     display: flex;
     flex-direction: column;
     justify-content: center;

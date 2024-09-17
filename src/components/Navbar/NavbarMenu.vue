@@ -118,8 +118,16 @@ export default {
     transition: all ease .3s;
     background: #ffffff;
     z-index: 12;
-    padding: 5px 40px;
+    padding: 5px 35vh;
     height: 85px;
+}
+
+@media screen and (max-width: 2105px) {
+
+#nav {
+    padding: 5px 10vh;
+
+}
 }
 
 #nav.active {
