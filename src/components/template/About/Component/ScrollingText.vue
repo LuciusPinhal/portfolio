@@ -50,7 +50,7 @@ export default {
     font-weight: bold;
 }
 
-@media screen and (max-heigth: 900px) {
+@media screen and (max-heigth: 1020px) {
 
     .scrolling-wrapper {
         top: 0;

@@ -1,13 +1,25 @@
 <template>
 <!-- falta trabalhar resposividade -->
 <div id="nav" :class="{ active: activeSection === 'about' }">
-    <div class="formNav">
-        <nav class="tabsNav">
-            <a @click="scrollToSection('home')" :class="{ active: activeSection === 'home' }">{{ $t('Home') }}</a>
-            <a @click="scrollToSection('about')" :class="{ active: activeSection === 'about' }">{{ $t('About') }}</a>
-            <a @click="scrollToSection('portfolio')" :class="{ active: activeSection === 'portfolio' }">{{ $t('Portfolio') }}</a>
-            <a @click="scrollToSection('contact')" :class="{ active: activeSection === 'contact' }">{{ $t('Contact') }}</a>
-        </nav>
+    <div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="formNav Nav-Menu">
+            <nav class="tabsNav">
+                <a @click="scrollToSection('home')" :class="{ active: activeSection === 'home' }">{{ $t('Home') }}</a>
+                <a @click="scrollToSection('about')" :class="{ active: activeSection === 'about' }">{{ $t('About') }}</a>
+                <a @click="scrollToSection('portfolio')" :class="{ active: activeSection === 'portfolio' }">{{ $t('Portfolio') }}</a>
+                <a @click="scrollToSection('contact')" :class="{ active: activeSection === 'contact' }">{{ $t('Contact') }}</a>
+            </nav>
+        </div>
     </div>
     <div>
         <nav class="tabsNav">
@@ -112,7 +124,7 @@ export default {
     background-color: #EFE9F4;
     padding: 0px 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     z-index: 1000;
     transition: all ease .3s;
@@ -124,17 +136,17 @@ export default {
 
 @media screen and (max-width: 2105px) {
 
-#nav {
-    padding: 5px 10vh;
+    #nav {
+        padding: 5px 10vh;
 
-}
+    }
 }
 
 #nav.active {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
 }
 
-#nav .formNav {
+.formNav {
     display: flex;
     align-items: center;
     margin: auto;
@@ -241,5 +253,129 @@ export default {
 
 .custom-dropdown:hover .dropdown-content {
     display: block;
+}
+
+.nav-header {
+    display: inline;
+}
+
+.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav-btn {
+    display: none;
+}
+
+#nav-check {
+    display: none;
+}
+
+@media (max-width:1056px) {
+    #nav {
+   
+        height: 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 5vh !important;
+     
+    }
+
+    
+
+    .nav-btn {
+        display: block;
+
+    }
+
+    #nav .tabsNav {
+        flex-direction: column;
+    }
+
+    #nav .Nav-Menu {
+        display: none;
+    }
+
+    label:hover,
+    #nav-check:checked~label {
+        transition: 1s;
+        background-color: #eeeeee;
+        border-radius: 5px;
+    }
+
+    label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #BC3432;
+    }
+
+    .nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.formNav {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    #nav-check:checked~.Nav-Menu {
+        display: block !important;
+        position: absolute;
+        top: 85px;
+        width: 35%;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+    }
+
+    #nav-check:checked~.nav-btn>label {
+
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .nav-btn >label {
+        cursor: pointer;
+    }
+    .selected-item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 6px 20px;
+        min-width: 214px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #000;
+        transition: 0.5s;
+        justify-content: flex-end;
+
+    }
+
+    #nav .tabsNav a:hover {
+
+        padding: 15px 8px;
+
+    }
+    #nav .tabsNav a{
+        padding: 12px 8px;
+    }
+
 }
 </style>

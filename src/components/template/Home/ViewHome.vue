@@ -1,14 +1,25 @@
 <template>
-<div class="parent">
-    <div class="div1">
-        <TextAnimetion />
-    </div>
-    <div class="div2">
-        <avatarVue />
-    </div>
-    <div class="div3">
+<div class="parent" v-if="isMobile">
+    <section class="avatar-mobile">
+        <AvatarImgMobile />
+    </section>
+    <section class="Scroll-section">
         <ScrollingAnimation />
-    </div>
+    </section>
+
+</div>
+<div class="parent" v-else>
+    <section class="text-section">
+        <TextAnimetion />
+    </section>
+    <section class="avatar-section">
+        <avatarVue />
+    </section>
+    <section class="Scroll-section">
+        <ScrollingAnimation />
+    </section>
+
+
 </div>
 </template>
 
@@ -18,30 +29,41 @@
 import avatarVue from './Component/AvatarImg.vue';
 import ScrollingAnimation from './Component/ScrollingAnimation.vue';
 import TextAnimetion from './Component/TextAnimetion.vue';
+import AvatarImgMobile from './Component/AvatarImgMobile.vue';
 
 export default {
     data() {
         return {
-
+            isMobile: false,
         };
     },
     components: {
         avatarVue,
         TextAnimetion,
-        ScrollingAnimation
+        ScrollingAnimation,
+        AvatarImgMobile
     },
     computed: {
 
     },
     methods: {
+        checkScreenWidth() {
+            this.isMobile = window.innerWidth <= 1056;
+        },
 
     },
     mounted() {
 
+        // Checa o tamanho da tela ao montar o componente
+        this.checkScreenWidth();
+        // Adiciona o listener para ajustar ao redimensionar a janela
+        window.addEventListener('resize', this.checkScreenWidth);
     },
-    created() {
+    beforeUnmount() {
+        // Remove o listener ao destruir o componente
+        window.removeEventListener('resize', this.checkScreenWidth);
+    },
 
-    },
 };
 </script>
 
@@ -56,15 +78,41 @@ export default {
     grid-row-gap: 0px;
 }
 
-.div1 {
+.avatar-mobile {
+    grid-area: 1 / 1 / 5 / 6;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+
+.text-section {
     grid-area: 1 / 1 / 4 / 3;
 }
 
-.div2 {
+.avatar-section {
     grid-area: 1 / 3 / 4 / 5;
 }
 
-.div3 {
+.Scroll-section {
     grid-area: 4 / 1 / 5 / 5;
 }
+
+@media (max-width: 1056px) {
+    .parent {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .Scroll-section {
+        grid-area: 5 / 1 / 6 / 6;
+    }
+}
+
+@media (max-width: 600px) {}
+
+
 </style>

@@ -70,6 +70,14 @@ h1 {
     }
 }
 
+@media (max-width: 1056px) {
+
+.main-container {
+    margin: 5vh  5vh 0  5vh;
+
+}
+}
+
 section {
     width: 100%;
     height: 100vh;
