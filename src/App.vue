@@ -6,15 +6,20 @@
     <main>
         <router-view />
     </main>
+    <footer>
+        <ViewFooter />
+    </footer>
 </div>
 </template>
 
 <script>
 import NavbarMenu from '@/components/template/Navbar/NavbarMenu.vue';
+import ViewFooter from '@/components/template/PageBaseBoard/ViewFooter.vue'
 
 export default {
     components: {
         NavbarMenu,
+        ViewFooter
     },
     data() {
         return {
@@ -42,6 +47,4 @@ export default {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-
 </style>

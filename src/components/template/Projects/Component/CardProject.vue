@@ -36,11 +36,15 @@ export default {
 <style scoped>
 .card {
     position: relative;
-    width: 440px;
-    height: 488px;
+    width: 100%; /* O card ocupa toda a largura da coluna do grid */
+    height: 100%; /* Faz o card ocupar toda a altura disponível */
+    min-height: 320px; /* Define uma altura mínima */
+    max-height: 488px; /* Define uma altura máxima */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .card .imgBx {

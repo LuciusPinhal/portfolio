@@ -5,6 +5,9 @@
             <section id="home">
                 <ViewHome />
             </section>
+            <div class="no-margin">
+                <ScrollingAnimation />
+            </div>
             <section id="about">
                 <ViewAbout />
             </section>
@@ -16,15 +19,13 @@
         </div>
     </div>
 </div>
-
-<ViewFooter />
 </template>
 
 <script>
 import ViewAbout from '@/components/template/About/ViewAbout.vue'
 import ViewHome from '@/components/template/Home/ViewHome.vue'
 import ViewProject from '@/components/template/Projects/ViewProject.vue'
-import ViewFooter from '@/components/template/PageBaseBoard/ViewFooter.vue'
+import ScrollingAnimation from '@/components/template/About/Component/ScrollingText.vue';
 
 export default {
     name: 'HomeViewPage',
@@ -38,7 +39,7 @@ export default {
         ViewHome,
         ViewAbout,
         ViewProject,
-        ViewFooter
+        ScrollingAnimation,
 
     },
     methods: {
@@ -50,9 +51,16 @@ export default {
 <style scoped>
 .main-container {
     margin-top: 32px !important;
-    margin: 35vh 35vh 0 35vh;
     min-height: 250px;
     overflow: hidden !important;
+}
+
+.main-container> :not(.no-margin) {
+    margin: 0vh 32vh 0 32vh;
+}
+
+.no-margin {
+    margin: 0vh -32vh 14vh -32vh;
 }
 
 h1 {
@@ -62,26 +70,26 @@ h1 {
     color: #222;
 }
 
-@media screen and (max-width: 2105px) {
-
-    .main-container {
-        margin: 10vh 10vh 0 10vh;
-
-    }
-}
-
 @media (max-width: 1056px) {
 
-.main-container {
-    margin: 5vh  5vh 0  5vh;
+    .main-container> :not(.no-margin) {
+        margin: 0vh 5vh 0 5vh;
+    }
 
-}
+    .no-margin {
+        margin: 5vh -5vh
+    }
 }
 
 section {
     width: 100%;
     height: 100vh;
     background: var(--clr);
+}
+
+#portfolio {
+    height: auto;
+    min-height: 100vh;
 }
 
 .form-header {
@@ -138,6 +146,7 @@ section {
     display: flex;
     align-items: flex-end;
     margin: 0 !important;
-    height: 650px;
+    height: 325px;
+
 }
 </style>

@@ -130,17 +130,23 @@ export default {
     transition: all ease .3s;
     background: #ffffff;
     z-index: 12;
-    padding: 5px 35vh;
+    padding: 5px 32vh;
     height: 85px;
 }
 
-@media screen and (max-width: 2105px) {
+
+
+  
+
+@media (max-width: 1056px) {
 
     #nav {
-        padding: 5px 10vh;
+        padding: 5px 5vh;
 
     }
+
 }
+
 
 #nav.active {
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
@@ -276,16 +282,14 @@ export default {
 
 @media (max-width:1056px) {
     #nav {
-   
+
         height: 85px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 5px 5vh !important;
-     
-    }
 
-    
+    }
 
     .nav-btn {
         display: block;
@@ -351,9 +355,11 @@ export default {
         border: 1px solid #ccc;
         border-radius: 5px;
     }
-    .nav-btn >label {
+
+    .nav-btn>label {
         cursor: pointer;
     }
+
     .selected-item {
         display: flex;
         align-items: center;
@@ -373,7 +379,8 @@ export default {
         padding: 15px 8px;
 
     }
-    #nav .tabsNav a{
+
+    #nav .tabsNav a {
         padding: 12px 8px;
     }
 

@@ -6,12 +6,12 @@
             <p class="Total">Total</p>
             <div class="DiceInfo">
                 <p>
-                    <b>{{ totalProjects }}</b> 
+                    <b>{{ totalProjects }}</b>
                     Projetos
 
                     <span style="margin:0px 12px 0px 5px;font-weight: 500;">|</span>
 
-                    <b>{{ totalPrototypes }}</b> 
+                    <b>{{ totalPrototypes }}</b>
                     Protótipos
                 </p>
             </div>
@@ -51,8 +51,7 @@ export default {
     },
     methods: {
         getTranslatedProjects() {
-            return [
-                {
+            return [{
                     name: this.$t('ChallengerPentagro'),
                     description: 'O projeto envolve o desenvolvimento de uma tela de login e gestão de usuários...',
                     link: 'https://github.com/LuciusPinhal/PentagroChallenge?tab=readme-ov-file',
@@ -88,7 +87,39 @@ export default {
                     image: require('@/img/teste.png'),
                     Type: 'project'
                 }
-                
+                ,
+                {
+                    name: this.$t('cart'),
+                    description: 'Descrição do segundo projeto...',
+                    link: 'https://github.com/OutroProjeto',
+                    title: 'Link para o segundo projeto',
+                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
+                    image: require('@/img/teste.png'),
+                    Type: 'project'
+                }
+                ,
+                {
+                    name: this.$t('cart'),
+                    description: 'Descrição do segundo projeto...',
+                    link: 'https://github.com/OutroProjeto',
+                    title: 'Link para o segundo projeto',
+                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
+                    image: require('@/img/teste.png'),
+                    Type: 'project'
+                }
+                ,
+                {
+                    name: this.$t('cart'),
+                    description: 'Descrição do segundo projeto...',
+                    link: 'https://github.com/OutroProjeto',
+                    title: 'Link para o segundo projeto',
+                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
+                    image: require('@/img/teste.png'),
+                    Type: 'project'
+                }
+             
+          
+
             ];
         },
         calculateCounts() {
@@ -99,14 +130,38 @@ export default {
 };
 </script>
 
+<!-- Footer alinhamento esquerda
+Footer mobile
+
+Margem tela all 32
+Margem header 32
+
+Mobile home letra vermelha Lucius - ajustar as linhas - 
+Definir espaços entre componentes- IGUAL DO PROTOTIPO =)  -  GATINHO TBM
+
+
+
+Teste Average  -->
+
 <style scoped>
 .ContainerCards {
-    display: flex;
-    align-items: center;
+   
     margin-top: 15vh;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Cria colunas que se ajustam automaticamente */
+    gap: 20px; /* Espaçamento entre os cards */
+    width: 100%; /* Garante que o container ocupe toda a largura */
+    padding: 10px; /* Padding interno para afastar os cards das bordas */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+  
+}
+
+@media screen and (max-width: 740px) {
+
+    .ContainerCards {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 }
 
 .parent {

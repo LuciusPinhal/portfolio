@@ -8,7 +8,7 @@
     <div class="container">
         <div class="box">
             <p>
-                Sou um desenvolvedor <b>Full Stack especializado em C# e Vue.js</b>, Trabalho profissionalmente com <b>.NET desde 2022</b>, com habilidades em prototipagem usando Figma.
+                Sou um desenvolvedor <b>Full Stack especializado em C# e Vue.js</b>, Trabalho profissionalmente com <b>.NET desde 2021</b>, com habilidades em prototipagem usando Figma.
                 <br>
                 <br>
                 Tenho experiência no desenvolvimento de sites e e-commerce utilizando<b>C#, Node.js e Vue.js</b>. Testes automatizados com Selenium para garantir a qualidade do código, <b>CI/CD</b> para automatizar o processo de desenvolvimento e <b>Docker</b> para otimizar o desempenho das aplicações.
@@ -21,7 +21,6 @@
 </div>
 </template>
 
-  
 <script>
 export default {
     name: 'AnimatedBoxes',
@@ -67,7 +66,7 @@ export default {
     text-decoration-color: #c72626;
     text-underline-offset: 15px;
     color: #000000;
-    
+
 }
 
 .container {
@@ -82,7 +81,7 @@ export default {
 
 .container .box {
     position: relative;
-    top: 62vh;
+    top: 74vh;
     width: 100%;
     height: calc(100% - 40vh);
     max-height: 800;

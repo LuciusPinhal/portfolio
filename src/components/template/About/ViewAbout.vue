@@ -1,13 +1,13 @@
 <template>
 <div class="parent">
-    <ScrollingAnimation />
-    <FromMeMobile v-if="isMobile"/>
-    <FromMe v-else/>
+
+    <FromMeMobile v-if="isMobile" />
+    <FromMe v-else />
 </div>
 </template>
 
 <script>
-import ScrollingAnimation from './Component/ScrollingText.vue';
+
 import FromMe from './Component/AboutMe.vue'
 import FromMeMobile from './Component/AboutMeMobile.vue'
 export default {
@@ -17,7 +17,6 @@ export default {
         };
     },
     components: {
-        ScrollingAnimation,
         FromMe,
         FromMeMobile
     },
@@ -52,5 +51,4 @@ export default {
     flex-wrap: wrap;
 
 }
-
 </style>

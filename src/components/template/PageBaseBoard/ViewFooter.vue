@@ -67,13 +67,16 @@ export default {
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    margin: 0;
     width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35vh;
 }
+
+
+
 
 .Tilte {
     font-weight: bolder;
@@ -122,7 +125,7 @@ a {
 }
 
 .Info p {
-    font-size: 16px;
+    font-size: 47%;
     gap: 10px;
     color: #000000;
     font-weight: 500;
@@ -133,7 +136,7 @@ a {
     width: 100%;
     margin-left: 0;
     overflow: hidden;
-    margin-top: 100px;
+
 }
 
 .footer {
@@ -146,5 +149,45 @@ a {
     /* Alterado para relative */
     bottom: 0;
     left: 0;
+}
+
+
+
+@media screen and (max-width: 1056px) {
+    .footer-content{
+        padding: 0 5vh;
+    }
+    .content {
+        width: 100%;
+        padding: 20px 5%;
+    }
+
+    .footer {
+        height: 295px !important;
+    }
+
+    .footer-content {
+
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .sci {
+        gap: 20px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .LinkItens {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
 }
 </style>

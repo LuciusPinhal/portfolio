@@ -19,7 +19,6 @@
         <ScrollingAnimation />
     </section>
 
-
 </div>
 </template>
 
@@ -113,6 +112,4 @@ export default {
 }
 
 @media (max-width: 600px) {}
-
-
 </style>

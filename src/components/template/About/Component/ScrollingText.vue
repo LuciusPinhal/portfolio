@@ -35,10 +35,10 @@ export default {
     position: relative;
     width: 100%;
     overflow: hidden;
-    top: -4vh;
+    top: 1vh;
     white-space: nowrap;
     height: 158px;
-    margin-bottom: 6vh;
+  
 }
 
 .scroll-text {
@@ -54,11 +54,11 @@ export default {
 
     .scrolling-wrapper {
         top: 0;
-        margin-bottom: 1vh;
-
+    
     }
 }
-.main-container{
+
+.main-container {
     margin: 0 !important;
 }
 </style>
