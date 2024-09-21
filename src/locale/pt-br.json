@@ -1,10 +1,11 @@
 {
     "cart": "Cart-pt",
     "teste": "Teste in portugays",
+
     "Home": "Inicio",
     "About": "Sobre", 
     "Services": "Serviços",
-    "Portfolio": "Portifolio",
+    "Portfolio": "Portifólio",
     "Contact": "Contato",
     "Detalhamento-de-usuários-referente-a-planilha": "Detalhamento de usuários referente a planilha",
     "Idioma-da-pagina": "Idioma da pagina",
@@ -17,5 +18,23 @@
     "Introducao": "Desenvolvedor Full-Stack & Amo Jogar Video Games",
     "desenvolvedor": "Desenvolvedor Full-Stack",
     "Skills": "HABILIDADES",
-    "ChallengerPentagro": "Desafio Pentagro"
+    "ChallengerPentagro": "Desafio Pentagro",
+    "AboutMe": "Sobre Mim",
+    "and": "e",
+    "I-am-a": "Sou um desenvolvedor",
+    "specialized-in-C#": "Full Stack especializado em C# e Vue.js.",
+    "working-professionally":  " Trabalho profissionalmente com ",
+    "2021": ".NET desde 2021",
+    "Figma": ", com habilidades em prototipagem usando",
+    "e-commerce": " Tenho experiência no desenvolvimento de sites e e-commerce utilizando",
+    "Selenium": " Testes automatizados com Selenium para garantir a qualidade do código, ",
+    "automatizar-processo": "para automatizar o processo de desenvolvimento e ",
+    "otimizar": "para otimizar o desempenho das aplicações.",
+    "processos-melhorar": " Foco na otimização de processos para melhorar a experiência do cliente e resolver problemas de projeto de forma eficiente, sempre buscando aprimorar o desempenho.",
+    "Projects": "Projetos",
+    "Prototypes": "Protótipos",
+    "LOCATION": "LOCALIZAÇÂO", 
+    "Social-Media": "Redes Sociais",
+    "Brazil": "Brasil"
+
 }

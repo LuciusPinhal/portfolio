@@ -24,7 +24,8 @@ export default {
     data() {
         return {
             logo_src: require('./img/logo.png'),
-            app_name: "Project"
+            app_name: "Project",
+            title: "Lucius | Full-stack Developer"
         }
     },
     methods: {
@@ -34,6 +35,7 @@ export default {
     },
     mounted() {
         this.setLocaleCookie();
+        document.title = this.title;
     }
 }
 </script>

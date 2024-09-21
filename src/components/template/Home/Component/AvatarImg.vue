@@ -1,5 +1,5 @@
 <template>
-<div class="tes">
+<div class="Container-Square">
     <div class="square">
         <span></span>
         <span></span>
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style scoped>
-.tes {
+.Container-Square {
     height: 100%;
     width: 100%;
     display: flex;

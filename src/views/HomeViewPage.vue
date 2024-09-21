@@ -60,7 +60,7 @@ export default {
 }
 
 .no-margin {
-    margin: 0vh -32vh 14vh -32vh;
+    margin: 8vh -32vh;
 }
 
 h1 {
@@ -68,6 +68,9 @@ h1 {
     font-size: 32px;
     margin-bottom: 10px;
     color: #222;
+}
+#about{
+    height: 438px;
 }
 
 @media (max-width: 1056px) {
@@ -79,13 +82,19 @@ h1 {
     .no-margin {
         margin: 5vh -5vh
     }
+
+    #about{
+        height: 438px;
+    }
 }
+
 
 section {
     width: 100%;
-    height: 100vh;
+    height: 94vh;
     background: var(--clr);
 }
+
 
 #portfolio {
     height: auto;

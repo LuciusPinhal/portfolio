@@ -8,13 +8,13 @@
     <div class="container">
         <div class="box">
             <p>
-                Sou um desenvolvedor <b>Full Stack especializado em C# e Vue.js</b>, Trabalho profissionalmente com <b>.NET desde 2021</b>, com habilidades em prototipagem usando Figma.
+                {{ $t('I-am-a') }} <b> {{ $t('specialized-in-C#') }}</b> {{ $t('working-professionally') }}<b> {{ $t('2021') }}</b> {{ $t('Figma') }} <b>Figma. </b>
                 <br>
                 <br>
-                Tenho experiência no desenvolvimento de sites e e-commerce utilizando<b>C#, Node.js e Vue.js</b>. Testes automatizados com Selenium para garantir a qualidade do código, <b>CI/CD</b> para automatizar o processo de desenvolvimento e <b>Docker</b> para otimizar o desempenho das aplicações.
+                {{ $t('e-commerce') }} <b> C#, Node.js</b> {{ $t('and') }} <b> Vue.js.</b> {{ $t('Selenium') }} <b>CI/CD</b> {{ $t('automatizar-processo') }} <b>Docker</b> {{ $t('otimizar') }}
                 <br>
                 <br>
-                Foco na otimização de processos para melhorar a experiência do cliente e resolver problemas de projeto de forma eficiente, sempre buscando aprimorar o desempenho.
+                {{ $t('processos-melhorar') }}
             </p>
         </div>
     </div>
@@ -59,7 +59,7 @@ export default {
 }
 
 .textAbout {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bolder;
     text-transform: uppercase;
     text-decoration: underline;
@@ -71,7 +71,7 @@ export default {
 
 .container {
     position: relative;
-    top: -67vh;
+    top: -56vh;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -123,7 +123,7 @@ export default {
 }
 
 .box p {
-    font-size: 16px;
+    font-size: 12px;
     border-left: 4px solid #c72626;
     padding-left: 15px;
 }

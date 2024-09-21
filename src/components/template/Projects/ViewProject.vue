@@ -1,18 +1,18 @@
 <template>
 <div>
     <div class="textProject">
-        <h1>Portifolio</h1>
+        <h1>{{ $t('Portfolio') }}</h1>
         <div class="Dice">
             <p class="Total">Total</p>
             <div class="DiceInfo">
                 <p>
                     <b>{{ totalProjects }}</b>
-                    Projetos
+                    {{ $t('Projects')}}
 
                     <span style="margin:0px 12px 0px 5px;font-weight: 500;">|</span>
 
                     <b>{{ totalPrototypes }}</b>
-                    Protótipos
+                    {{ $t('Prototypes')}}
                 </p>
             </div>
         </div>
@@ -86,8 +86,25 @@ export default {
                     stacks: ['JavaScript', 'Node.js', 'MongoDB'],
                     image: require('@/img/teste.png'),
                     Type: 'project'
-                }
-                ,
+                },
+                {
+                    name: this.$t('cart'),
+                    description: 'Descrição do segundo projeto...',
+                    link: 'https://github.com/OutroProjeto',
+                    title: 'Link para o segundo projeto',
+                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
+                    image: require('@/img/teste.png'),
+                    Type: 'project'
+                },
+                {
+                    name: this.$t('cart'),
+                    description: 'Descrição do segundo projeto...',
+                    link: 'https://github.com/OutroProjeto',
+                    title: 'Link para o segundo projeto',
+                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
+                    image: require('@/img/teste.png'),
+                    Type: 'project'
+                },
                 {
                     name: this.$t('cart'),
                     description: 'Descrição do segundo projeto...',
@@ -97,28 +114,6 @@ export default {
                     image: require('@/img/teste.png'),
                     Type: 'project'
                 }
-                ,
-                {
-                    name: this.$t('cart'),
-                    description: 'Descrição do segundo projeto...',
-                    link: 'https://github.com/OutroProjeto',
-                    title: 'Link para o segundo projeto',
-                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
-                    image: require('@/img/teste.png'),
-                    Type: 'project'
-                }
-                ,
-                {
-                    name: this.$t('cart'),
-                    description: 'Descrição do segundo projeto...',
-                    link: 'https://github.com/OutroProjeto',
-                    title: 'Link para o segundo projeto',
-                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
-                    image: require('@/img/teste.png'),
-                    Type: 'project'
-                }
-             
-          
 
             ];
         },
@@ -139,21 +134,19 @@ Margem header 32
 Mobile home letra vermelha Lucius - ajustar as linhas - 
 Definir espaços entre componentes- IGUAL DO PROTOTIPO =)  -  GATINHO TBM
 
-
-
 Teste Average  -->
 
 <style scoped>
 .ContainerCards {
-   
-    margin-top: 15vh;
+
+    margin-top: 70px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Cria colunas que se ajustam automaticamente */
-    gap: 20px; /* Espaçamento entre os cards */
-    width: 100%; /* Garante que o container ocupe toda a largura */
-    padding: 10px; /* Padding interno para afastar os cards das bordas */
-    box-sizing: border-box; /* Inclui padding e border no tamanho total */
-  
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    width: 100%;
+
+    box-sizing: border-box;
+
 }
 
 @media screen and (max-width: 740px) {
@@ -181,6 +174,16 @@ Teste Average  -->
     text-underline-offset: 15px;
     text-align: left;
     color: #000000;
+}
+
+@media screen and (max-width: 1056px) {
+    .textProject h1 {
+        font-size: 26px;
+    }
+
+    .Dice {
+        font-size: 14px;
+    }
 }
 
 .textProject {

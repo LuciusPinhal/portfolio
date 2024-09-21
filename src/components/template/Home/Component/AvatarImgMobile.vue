@@ -1,5 +1,5 @@
 <template>
-<div class="tes">
+<div class="Container-Square">
     <div class="square">
         <span></span>
         <span></span>
@@ -11,7 +11,7 @@
                         <img :src="require('@/img/me.jpeg')">
                     </div>
                     <div class="textBx">
-                        <h2>Lucius Pinhal<br><b> {{ $t('desenvolvedor') }}</b></h2>
+                        <h2> <a>Lucius Pinhal</a><br><b> {{ $t('desenvolvedor') }}</b></h2>
                     </div>
                 </div>
             </div>
@@ -20,7 +20,6 @@
 </div>
 </template>
 
-    
 <script>
 import '@fortawesome/fontawesome-free/css/all.css';
 
@@ -48,9 +47,8 @@ export default {
 };
 </script>
 
-    
 <style scoped>
-.tes {
+.Container-Square {
     height: 100%;
     width: 100%;
     display: flex;
@@ -61,11 +59,15 @@ export default {
 
 .square {
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 480px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a {
+    color: #A43913;
 }
 
 @media (max-width: 600px) {

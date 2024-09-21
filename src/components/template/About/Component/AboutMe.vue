@@ -2,7 +2,7 @@
 <div class="About">
     <div class="container-sobre">
         <div class="textAbout">
-            Sobre Mim
+            {{ $t('AboutMe') }}
         </div>
     </div>
     <div class="container">
@@ -13,13 +13,13 @@
         </div>
         <div class="box">
             <p>
-                Sou um desenvolvedor <b>Full Stack especializado em C# e Vue.js</b>, Trabalho profissionalmente com <b>.NET desde 2021</b>, com habilidades em prototipagem usando Figma.
+                {{ $t('I-am-a') }} <b> {{ $t('specialized-in-C#') }}</b> {{ $t('working-professionally') }}<b> {{ $t('2021') }}</b> {{ $t('Figma') }} <b>Figma. </b>
                 <br>
                 <br>
-                Tenho experiência no desenvolvimento de sites e e-commerce utilizando<b>C#, Node.js e Vue.js</b>. Testes automatizados com Selenium para garantir a qualidade do código, <b>CI/CD</b> para automatizar o processo de desenvolvimento e <b>Docker</b> para otimizar o desempenho das aplicações.
+                {{ $t('e-commerce') }} <b> C#, Node.js</b> {{ $t('and') }} <b> Vue.js.</b> {{ $t('Selenium') }} <b>CI/CD</b> {{ $t('automatizar-processo') }} <b>Docker</b> {{ $t('otimizar') }}
                 <br>
                 <br>
-                Foco na otimização de processos para melhorar a experiência do cliente e resolver problemas de projeto de forma eficiente, sempre buscando aprimorar o desempenho.
+                {{ $t('processos-melhorar') }}
             </p>
         </div>
     </div>
@@ -76,9 +76,9 @@ export default {
 
 .container {
     position: relative;
-    top: -56vh;
+    top: -58vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     width: 100%;
     height: 100%;
     grid-gap: 30px;
@@ -128,13 +128,13 @@ export default {
 }
 
 .box p {
-    font-size: 16px;
+    font-size: 14px;
     border-left: 4px solid #c72626;
     padding-left: 15px;
 }
 
 .imgBx {
-    width: 100%;
+    width: 98%;
     height: 100%;
     display: flex;
     align-content: center;
@@ -143,7 +143,7 @@ export default {
 }
 
 .imgBx img {
-    width: 600px;
+    width: 100%;
 
     height: 360px;
 
@@ -152,15 +152,15 @@ export default {
     display: block;
 }
 
-@media screen and (min-width: 1820px) {
-    .box p {
-        font-size: 20px;
-    }
-}
 
 @media screen and (max-width: 1200px) {
     .imgBx img {
         width: 400px;
     }
+
+    .box p {
+        font-size: 12PX
+    }
+
 }
 </style>

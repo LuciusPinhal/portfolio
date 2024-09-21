@@ -82,6 +82,11 @@ p {
 
 }
 
+@media screen and (max-width: 740px) {
+    p {
+        font-size: 20px;
+    }
+}
 .line {
     width: 100%;
     color: #000000;
@@ -92,10 +97,9 @@ p {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
-    padding: 12px 0px;
 
 }
 

@@ -3,13 +3,13 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="content">
-                <p class="Tilte">Contatos</p>
+                <p class="Tilte">{{ $t('Contact')}}</p>
                 <div class="LinkItens">
                     <div class="sci">
                         <a href="https://www.google.com/maps/place/S%C3%A3o+Carlos/data=!4m2!3m1!1s0x94b87726bb9dd181:0xd9d7d71505999bc?sa=X&ved=1t:242&ictx=111"><i class="fa-solid fa-location-dot Info">
                                 <div>
-                                    <p>LOCALIZAÇÂO</p>
-                                    <p>São Paulo, Brasil.</p>
+                                    <p>{{ $t('LOCATION')}}</p>
+                                    <p>São Paulo, {{ $t('Brazil')}}.</p>
                                 </div>
                             </i></a>
                         <a href="mailto:pinhal.lucius@gmail.com"><i class="fa-regular fa-envelope Info">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="content">
-                <p class="Tilte">Redes Sociais</p>
+                <p class="Tilte">{{ $t('Social-Media')}}</p>
                 <div class="LinkItens">
                     <div class="sci">
                         <a href="https://www.linkedin.com/in/luciuspinhal/"><i class="fa-brands fa-linkedin-in Info">
@@ -74,9 +74,6 @@ export default {
     justify-content: space-between;
     padding: 0 35vh;
 }
-
-
-
 
 .Tilte {
     font-weight: bolder;
@@ -151,19 +148,19 @@ a {
     left: 0;
 }
 
-
-
 @media screen and (max-width: 1056px) {
-    .footer-content{
+    .footer-content {
         padding: 0 5vh;
     }
+
     .content {
         width: 100%;
         padding: 20px 5%;
     }
 
     .footer {
-        height: 295px !important;
+        height: 430px !important;
+        font-size: 14px;
     }
 
     .footer-content {
@@ -177,17 +174,29 @@ a {
     }
 
     .sci {
-        gap: 20px;
+        gap: 30px;
         width: 100%;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     .LinkItens {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
 
     }
 
+    .Info p {
+
+        font-size: 35%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .footer-content {
+        padding: 0 5vh;
+    }
 }
 </style>
