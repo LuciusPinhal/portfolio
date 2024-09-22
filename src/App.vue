@@ -29,12 +29,25 @@ export default {
         }
     },
     methods: {
-        setLocaleCookie() {
-            document.cookie = 'locale=PTBR';
+        setLocaleCookie(locale) {
+            document.cookie = `locale=${locale}; path=/;`;
+        },
+        getLocaleCookie() {
+            const match = document.cookie.match(new RegExp('(^| )locale=([^;]+)'));
+            return match ? match[2] : null;
+        },
+        setInitialLanguage() {
+            const savedLocale = this.getLocaleCookie();
+            if (!savedLocale) {
+                this.setLocaleCookie('PTBR'); 
+                this.$i18n.locale = 'PTBR';   
+            } else {
+                this.$i18n.locale = savedLocale; 
+            }
         }
     },
     mounted() {
-        this.setLocaleCookie();
+        this.setInitialLanguage(); 
         document.title = this.title;
     }
 }
