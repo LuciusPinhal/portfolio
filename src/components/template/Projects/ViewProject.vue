@@ -53,65 +53,83 @@ export default {
         getTranslatedProjects() {
             return [{
                     name: this.$t('ChallengerPentagro'),
-                    description: 'O projeto envolve o desenvolvimento de uma tela de login e gestão de usuários...',
-                    link: 'https://github.com/LuciusPinhal/PentagroChallenge?tab=readme-ov-file',
-                    title: 'Link para ir para o Projeto',
-                    stacks: ['Vue.js', 'API', 'Login System'],
-                    image: require('@/img/teste.png'),
+                    description: this.$t('PentagroDescription'),
+                    link: 'https://github.com/LuciusPinhal/PentagroChallenge',
+                    title: this.$t('Title'),
+                    stacks: ['Vue.js', 'API', 'JavaScript'],
+                    image: require('@/img/Pentagro.png'),
                     Type: 'project | prototype'
                 },
                 {
-                    name: this.$t('cart'),
-                    description: 'Descrição do segundo projeto...',
-                    link: 'https://github.com/OutroProjeto',
-                    title: 'Link para o segundo projeto',
-                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
-                    image: require('@/img/teste.png'),
+                    name: this.$t('DavinTIName'),
+                    description: this.$t('DavinTIDescription'),
+                    link: 'https://github.com/LuciusPinhal/DavinTIChallenge',
+                    title: this.$t('Title'),
+                    stacks: ['JavaScript', 'Node.js', 'Vue.js'],
+                    image: require('@/img/Davin.png'),
+                    Type: 'project | prototype'
+                },
+                {
+                    name: this.$t('MJVTIName'),
+                    description: this.$t('MJVDescription'),
+                    link: 'https://github.com/LuciusPinhal/ProjectStore_MJVSchool',
+                    title: this.$t('Title'),
+                    stacks: ['C#', 'JavaScript', 'MVC'],
+                    image: require('@/img/MJV.png'),
+                    Type: 'project | prototype'
+                },
+                {
+                    name: this.$t('VoxusName'),
+                    description: this.$t('VoxusDescription'),
+                    link: 'https://github.com/LuciusPinhal/VoxusChallege',
+                    title: this.$t('Title'),
+                    stacks: ['Docker', 'Node.js', 'Vue.js', 'JavaScript'],
+                    image: require('@/img/Voxus.png'),
                     Type: 'project'
                 },
                 {
-                    name: this.$t('cart'),
-                    description: 'Descrição do segundo projeto...',
-                    link: 'https://github.com/OutroProjeto',
-                    title: 'Link para o segundo projeto',
-                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
-                    image: require('@/img/teste.png'),
+                    name: this.$t('CopyBaseName'),
+                    description: this.$t('CopyBaseDescription'),
+                    link: 'https://github.com/LuciusPinhal/CopyBaseChallenge',
+                    title: this.$t('Title'),
+                    stacks: ['Vue.js', 'Docker', 'javaScript'],
+                    image: require('@/img/CopyBase.png'),
+                    Type: 'project | prototype'
+                },
+                {
+                    name: this.$t('SnakeName'),
+                    description: this.$t('SnakeDescription'),
+                    link: 'https://github.com/LuciusPinhal/Game_Snake',
+                    title: this.$t('Title'),
+                    stacks: ['JavaScript', 'HTML', 'CSS'],
+                    image: require('@/img/Snake.png'),
                     Type: 'project'
                 },
                 {
-                    name: this.$t('cart'),
-                    description: 'Descrição do segundo projeto...',
-                    link: 'https://github.com/OutroProjeto',
-                    title: 'Link para o segundo projeto',
-                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
-                    image: require('@/img/teste.png'),
+                    name: this.$t('ArrayName'),
+                    description: this.$t('ArrayDescription'),
+                    link: 'https://github.com/LuciusPinhal/ArrayChallenge',
+                    title: this.$t('Title'),
+                    stacks: ['C#', 'Vue.js', 'JavaScript'],
+                    image: require('@/img/Array.png'),
                     Type: 'project'
                 },
                 {
-                    name: this.$t('cart'),
-                    description: 'Descrição do segundo projeto...',
-                    link: 'https://github.com/OutroProjeto',
-                    title: 'Link para o segundo projeto',
-                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
-                    image: require('@/img/teste.png'),
+                    name: this.$t('ChessName'),
+                    description: this.$t('ChessDescription'),
+                    link: 'https://github.com/LuciusPinhal/Curso_Udemy/tree/main/C%23%20Completo/Project%20Game%20Xadrez%20Console',
+                    title: this.$t('Title'),
+                    stacks: ['C#', 'Console Application'],
+                    image: require('@/img/Xadrez.png'),
                     Type: 'project'
                 },
                 {
-                    name: this.$t('cart'),
-                    description: 'Descrição do segundo projeto...',
-                    link: 'https://github.com/OutroProjeto',
-                    title: 'Link para o segundo projeto',
-                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
-                    image: require('@/img/teste.png'),
-                    Type: 'project'
-                },
-                {
-                    name: this.$t('cart'),
-                    description: 'Descrição do segundo projeto...',
-                    link: 'https://github.com/OutroProjeto',
-                    title: 'Link para o segundo projeto',
-                    stacks: ['JavaScript', 'Node.js', 'MongoDB'],
-                    image: require('@/img/teste.png'),
+                    name: this.$t('hamburgerName'),
+                    description: this.$t('hamburgerDescription'),
+                    link: 'https://github.com/LuciusPinhal/Create_hamburger',
+                    title: this.$t('Title'),
+                    stacks: ['Vue.js', 'JavaScript'],
+                    image: require('@/img/Hamburger.png'),
                     Type: 'project'
                 }
 
@@ -124,17 +142,6 @@ export default {
     }
 };
 </script>
-
-<!-- Footer alinhamento esquerda
-Footer mobile
-
-Margem tela all 32
-Margem header 32
-
-Mobile home letra vermelha Lucius - ajustar as linhas - 
-Definir espaços entre componentes- IGUAL DO PROTOTIPO =)  -  GATINHO TBM
-
-Teste Average  -->
 
 <style scoped>
 .ContainerCards {

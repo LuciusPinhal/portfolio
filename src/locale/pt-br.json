@@ -1,7 +1,4 @@
 {
-    "cart": "Cart-pt",
-    "teste": "Teste in portugays",
-
     "Home": "Inicio",
     "About": "Sobre", 
     "Services": "Serviços",
@@ -35,6 +32,25 @@
     "Prototypes": "Protótipos",
     "LOCATION": "LOCALIZAÇÂO", 
     "Social-Media": "Redes Sociais",
-    "Brazil": "Brasil"
+    "Brazil": "Brasil",
+    "Title": "Link para ir para o Projeto",
+    "PentagroDescription": "O projeto envolve o desenvolvimento de uma tela de login e gestão de usuários.",
+    "DavinTIName": "Desafio DavinTI",
+    "DavinTIDescription": "Projeto CRUD que permite adicionar pessoas com suas idades e gerenciar seus números de telefone de forma simples e intuitiva",
+    "MJVTIName": "Projeto Loja MJVSchool",
+    "MJVDescription": "Loja online com seções de produtos, usando ASP.NET Core Web API no back-end e ASP.NET Core MVC no front-end. O banco de dados utilizado foi PostgreSQL, integrado via NpgSql.",
+    "VoxusName": "Desafio Voxus",
+    "VoxusDescription": "Microserviço Node.js que fornece informações sobre o nascer e o pôr do sol com base nas coordenadas de latitude e longitude. O serviço foi containerizado com Docker para facilitar os testes.",
+    "CopyBaseName": "Desafio painel CopyBase",
+    "CopyBaseDescription": "Aplicação web full-stack que permite importar planilhas de assinantes e analisar métricas de negócios como MRR, ARPU e outros indicadores através de gráficos interativos.",
+    "SnakeName": "Jogo da Serpente",
+    "SnakeDescription": "Desenvolvi um jogo da Jogo da Serpente na web utilizando JavaScript para um projeto da faculdade.",
+    "ArrayName": "Desafio Array",
+    "ArrayDescription": "Este projeto foi desenvolvido como parte de um desafio para aprender sobre o padrão Mediator em Vue.js, utilizando arrays como exemplo para mostrar sua aplicação prática.",
+    "ChessName": "Jogo de Xadrez",
+    "ChessDescription": "Jogo de Xadrez desenvolvido em C# no console, como parte de um curso na Udemy. O projeto envolve a implementação completa das regras do xadrez, com foco em lógica de programação e interação via terminal.",
+    "hamburgerName": "Faça o seu hamburger",
+    "hamburgerDescription": "Este foi meu primeiro projeto em Vue.js, onde desenvolvi um sistema de encomenda de hambúrgueres. Nele, os usuários podem criar e encomendar seus próprios hambúrgueres."
+
 
 }

@@ -3,7 +3,7 @@
     <div class="imgBx" :style="{ backgroundImage: `url(${project.image})` }"></div>
     <div class="content">
         <span class="price">
-            <a href="https://github.com/LuciusPinhal/PentagroChallenge?tab=readme-ov-file" class="AlingItensHeader" :title="project.title">
+            <a :href="project.link" class="AlingItensHeader" :title="project.title">
                 <i class="fa-brands fa-github fa-2x"></i>
             </a>
         </span>
@@ -51,9 +51,9 @@ export default {
     position: relative;
     width: 100%;
     height: 260px;
-    background: #f00;
-    /* border-radius: 15px; */
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border: 1px solid black;
     border-radius: 8px 8px 0px 8px;
     border-bottom: none;
@@ -92,7 +92,7 @@ export default {
     height: 100%;
     align-items: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 

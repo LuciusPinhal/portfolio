@@ -1,6 +1,4 @@
 {
-  "cart": "Cart-En",
-  "teste": "Teste in igreis",
   "Home": "Home",
   "About": "About",
   "Services": "Services",
@@ -34,6 +32,25 @@
   "Prototypes": "Prototypes",
   "LOCATION": "LOCATION", 
   "Social-Media": "Social Media",
-  "Brazil": "Brazil"
+  "Brazil": "Brazil",
+  "Title": "Link to go to the Project",
+  "PentagroDescription": "The project involves the development of a login screen and user management.",
+  "DavinTIName": "DavinTI Challenge",
+  "DavinTIDescription": "CRUD project that allows adding people with their ages and managing their phone numbers in a simple and intuitive way.",
+  "MJVTIName": "Project Store MJVSchool",
+  "MJVDescription": "Online store with product sections, using ASP.NET Core Web API on the back-end and ASP.NET Core MVC on the front-end. The database used was PostgreSQL, integrated via NpgSql.",
+  "VoxusName": "Voxus Challege",
+  "VoxusDescription": "Node.js microservice that provides information about sunrise and sunset based on latitude and longitude coordinates. The service was containerized with Docker to facilitate testing.",
+  "CopyBaseName": "CopyBase Dashboard Challenge",
+  "CopyBaseDescription": "Full-stack web application that allows importing subscriber spreadsheets and analyzing business metrics such as MRR, ARPU, and other indicators through interactive charts.",
+  "SnakeName": "Game Snake",
+  "SnakeDescription": "I developed a Snake game on the web using JavaScript for a college project.",
+  "ArrayName": "Array Challenge",
+  "ArrayDescription": "This project was developed as part of a challenge to learn about the Mediator pattern in Vue.js, using arrays as an example to demonstrate its practical application.",
+  "ChessName": "Chess Game",
+  "ChessDescription": "Chess game developed in C# in the console as part of a course on Udemy. The project involves the complete implementation of chess rules, focusing on programming logic and terminal interaction.",
+  "hamburgerName": "Make Your hamburger",
+  "hamburgerDescription": "This was my first project in Vue.js, where I developed a burger ordering system. In it, users can create and order their own custom burgers."
+
 
 }
