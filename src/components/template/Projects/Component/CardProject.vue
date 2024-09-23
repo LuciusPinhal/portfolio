@@ -99,7 +99,7 @@ export default {
 .card .content .price {
     position: absolute;
     top: -44px;
-    left: -1.1px;
+    left: -1.0px;
     height: 55px;
     width: 50%;
     background: #ffffff;
