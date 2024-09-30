@@ -1,80 +1,54 @@
-# <img align="center" style="margin-bottom:100px" width=100% src="https://github.com/LuciusPinhal/LuciusPinhal/blob/main/Logo.png" />
+# <img align="center" style="margin-bottom:100px" width=100% src="https://github.com/user-attachments/assets/0b294b2f-0377-4cfe-97ac-0da6141d2217" />
 &nbsp;&nbsp;&nbsp;
 
 
 
-https://github.com/user-attachments/assets/96b5b45a-5533-4cb2-b5d1-488d5a578844
+https://github.com/user-attachments/assets/4944be37-23a6-4db7-88c9-e638b872313a
+
 
  
 &nbsp;&nbsp;
 
-# Microserviço de Sunrise/Sunset
 
-Este projeto contém um microserviço Node.js que fornece informações sobre o nascer e pôr do sol com base em coordenadas de latitude e longitude.
+## 🎯 Confira meu Portfolio!
 
-## Requisitos Prévios
+[![Meu Portfólio](https://img.shields.io/badge/Meu_Portfólio-Visite_Agora!-brightgreen?style=for-the-badge)](https://luciusportifolio.netlify.app/)
 
-- Docker instalado: [Download do Docker](https://www.docker.com/get-started)
+
+&nbsp;
+&nbsp;
+
+
+# 💻 Portfolio
+
+Este projeto contém o meu portfolio em Vue.js que fornece informações sobre todos os meus projetos e um pouco sobre mim.
+
+
+&nbsp;
+&nbsp;
 
 # Instruções de Execução
 
 &nbsp;
-
-### 🚀 Back-End (Node.js)
-
-*  Abra o terminal e navegue até o diretório onde está o arquivo app.js na pasta BackEnd:
- ```bash
- cd BackEnd
-```
-&nbsp;
-
-*  **Construir a Imagem Docker:**
-
- ```bash
-docker build -t Back-challenge-Voxus .
-```
-&nbsp;
-
-*  **Iniciar o Contêiner:**
-
- ```bash
-docker run -p 3000:3000 Back-challenge-Voxus
-```
-&nbsp;
-
-### 🧪 Tests (Jest.js)
-
-*  **Construir a Imagem Docker teste:**
-
- ```bash
-docker build -t microservico-test -f Dockerfile.test .
-```
-&nbsp;
-
-*  **Iniciar o Contêiner:**
-
- ```bash
-docker run microservico-test
-```
 &nbsp;
 
 ### 🚀 Front-End (Vue.js)
 
  * Navegue até o diretório do projeto Vue.js:
  ```bash
- cd FrontEnd/Voxus
+ cd project
 ```
 &nbsp;
 
 * Instale as dependências do projeto:
 ```bash
-docker build -t Front-challenge-Voxus . 
+npm install
 ```
 &nbsp;
 
 * Inicie o servidor Vue.js:
 ```bash
-docker run -p 8080:8080 Front-challenge-Voxus
+npm run server
 ```
 &nbsp;
 
@@ -82,4 +56,4 @@ docker run -p 8080:8080 Front-challenge-Voxus
 
 &nbsp;
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=1D52FB&height=120&section=footer"/>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=A43913&height=120&section=footer"/>
