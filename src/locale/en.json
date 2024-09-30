@@ -37,7 +37,7 @@
   "PentagroDescription": "The project involves the development of a login screen and user management.",
   "DavinTIName": "DavinTI Challenge",
   "DavinTIDescription": "CRUD project that allows adding people with their ages and managing their phone numbers in a simple and intuitive way.",
-  "MJVTIName": "Project Store MJVSchool",
+  "MJVTIName": "Project Store MJV School",
   "MJVDescription": "Online store with product sections, using ASP.NET Core Web API on the back-end and ASP.NET Core MVC on the front-end. The database used was PostgreSQL, integrated via NpgSql.",
   "VoxusName": "Voxus Challege",
   "VoxusDescription": "Node.js microservice that provides information about sunrise and sunset based on latitude and longitude coordinates. The service was containerized with Docker to facilitate testing.",
